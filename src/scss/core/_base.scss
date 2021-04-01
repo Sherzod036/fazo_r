@@ -7,6 +7,32 @@
 	box-sizing: border-box;
 }
 
+:root {
+	font-size: 10px;
+}
+
+::selection {
+	background: $primary;
+	color: #fff;
+}
+
+body {
+	font-family: 'VisueltPro';
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: $secondary;
+	height: 5000px;
+}
+
+body::-webkit-scrollbar {
+	width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: $primary;
+	outline: 1px solid #fff;
+}
+
 li {
 	list-style: none;
 }

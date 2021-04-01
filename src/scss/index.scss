@@ -3,7 +3,11 @@
 @import 'core/base';
 @import 'core/libs';
 
+@import 'components/navigation';
+@import 'components/langs';
+
 @import 'layouts/header';
+@import 'layouts/hero';
 @import 'layouts/footer';
 
 @import 'adaptive/xxl';

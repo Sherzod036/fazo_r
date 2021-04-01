@@ -1,0 +1,49 @@
+.header {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding: 24px 0;
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+	&__navigation {
+		margin-right: 70px;
+	}
+	&__right-block {
+		display: flex;
+		align-items: center;
+	}
+	&__call {
+		width: 45px;
+		height: 45px;
+		background: $primary;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: 18px;
+		animation: puls 2s infinite;
+		margin-right: 25px;
+	}
+}
+
+@keyframes puls {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(237, 50, 55, 0.7);
+	}
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
+	}
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+	}
+}
