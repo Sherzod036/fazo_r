@@ -1,52 +1,151 @@
 .hero {
-	width: 100%;
-	height: 100vh;
-	background: #ececec;
-	display: flex;
-	align-items: center;
-	&__title {
-		font-family: 'TacticRound';
-		font-weight: 700;
-		font-size: 4.8rem;
-		line-height: 5.8rem;
-		max-width: 660px;
-		margin-bottom: 25px;
-		& span {
-			color: $primary;
-		}
-	}
-	&__desc {
-		max-width: 445px;
-		font-size: 1.4rem;
-		line-height: 2.5rem;
-		margin-bottom: 25px;
-	}
-	&__buttons {
-		display: flex;
-		align-items: center;
-	}
-	&__button {
-		font-weight: 500;
-		color: $primary;
-		margin-right: 15px;
-		padding: 10px 15px;
-		border-radius: 10px;
-		border: 1px solid $primary;
-		transition: 0.3s;
-		&:hover {
-			background: $primary;
-			color: #fff;
-		}
-		&:last-child {
-			margin-right: 0;
-		}
-		&--colored {
-			background: $primary;
-			color: #fff;
-			&:hover {
-				background: none;
-				color: $primary;
-			}
-		}
-	}
+  width: 100%;
+  background: #ececec;
+  padding-top: 115px;
+  padding-bottom: 100px;
+  &__teaser {
+    position: relative;
+  }
+  &__title {
+    font-family: 'TacticRound';
+    font-weight: 700;
+    font-size: 4.6rem;
+    line-height: 5.8rem;
+    max-width: 640px;
+    margin-bottom: 25px;
+    padding-top: 70px;
+    & span {
+      color: $primary;
+    }
+  }
+  &__desc {
+    max-width: 445px;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-bottom: 25px;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 167px;
+  }
+  &__button {
+    font-weight: 500;
+    color: $primary;
+    margin-right: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid $primary;
+    transition: 0.3s;
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &_colored {
+      background: $primary;
+      color: #fff;
+      &:hover {
+        background: none;
+        color: $primary;
+      }
+    }
+  }
+  &__slider {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 632px;
+  }
+  &__abstract {
+    position: absolute;
+    &_colored {
+      top: 24px;
+      left: 22px;
+    }
+  }
+}
+
+.benefits {
+  position: relative;
+  background: #fff;
+  box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.11);
+  padding: 35px 30px;
+  margin-bottom: 85px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  &__icon {
+    display: block;
+    flex: 0 0 80px;
+    margin-right: 18px;
+  }
+  &__title {
+    font-family: 'TacticRound';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 11px;
+  }
+  &__desc {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #929292;
+  }
+}
+
+.category {
+  position: relative;
+  width: 480px;
+  height: 367px;
+  background: #fff;
+  box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.11);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__image {
+    position: absolute;
+    right: -25px;
+    top: -25px;
+  }
+  &__title {
+    font-family: 'TacticRound';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+    display: block;
+    width: 180px;
+    margin-bottom: 20px;
+  }
+  &__desc {
+    display: block;
+    width: 170px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+  }
+  &__button {
+    width: 120px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    font-weight: 500;
+    color: $primary;
+    transition: 0.3s;
+    &:hover {
+      background: $primary;
+      color: #fff;
+    }
+  }
 }

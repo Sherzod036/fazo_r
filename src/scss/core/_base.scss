@@ -1,69 +1,70 @@
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	-webkit-tap-highlight-color: transparent;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
 }
 
 :root {
-	font-size: 10px;
+  font-size: 10px;
 }
 
 ::selection {
-	background: $primary;
-	color: #fff;
+  background: $primary;
+  color: #fff;
 }
 
 body {
-	font-family: 'VisueltPro';
-	font-weight: 400;
-	font-size: 1.6rem;
-	color: $secondary;
-	height: 5000px;
+  font-family: 'VisueltPro';
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $secondary;
+  overflow-x: hidden;
+  height: 5000px;
 }
 
 body::-webkit-scrollbar {
-	width: 6px;
+  width: 6px;
 }
 
 body::-webkit-scrollbar-thumb {
-	background: $primary;
-	outline: 1px solid #fff;
+  background: $primary;
+  outline: 1px solid #fff;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
-	cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 input {
-	background: none;
-	border: none;
-	outline: none;
-	-webkit-appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
 }
 
 textarea {
-	resize: none;
-	background: none;
-	border: none;
-	outline: none;
+  resize: none;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 button {
-	background: none;
-	border: none;
-	outline: none;
-	cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

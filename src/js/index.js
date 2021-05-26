@@ -1,3 +1,5 @@
 $(function () {
-	console.log('BOOST');
-});
+  $('.categories').owlCarousel({
+    items: 2
+  })
+})
