@@ -22,7 +22,6 @@ body {
   font-size: 1.6rem;
   color: $secondary;
   overflow-x: hidden;
-  height: 5000px;
 }
 
 body::-webkit-scrollbar {
@@ -67,4 +66,8 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.indent {
+  margin-bottom: 100px;
 }

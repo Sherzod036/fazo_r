@@ -1,0 +1,120 @@
+.footer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 35px 0;
+  padding-bottom: 0;
+  &__logo {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  & .list {
+    margin-bottom: 24px;
+    &__item {
+      margin-bottom: 11px;
+    }
+    &__link {
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  &__link {
+    color: #fff;
+    text-decoration: underline;
+    transition: 0.3s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+  &__products {
+    margin-bottom: 51px;
+  }
+}
+
+.contact {
+  display: flex;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    display: block;
+    flex: 0 0 85px;
+    color: #fff;
+    margin-right: 10px;
+  }
+  &__link {
+    display: block;
+    color: #fff;
+    transition: 0.3s;
+    &:hover {
+      color: $primary;
+    }
+    &_location {
+      line-height: 2.5rem;
+      margin-top: -3px;
+    }
+    &_phone {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.subscribe {
+  & a {
+    color: #fff;
+    font-size: 2.3rem;
+    transition: 0.3s;
+    margin-right: 18px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.copy {
+  margin-top: 45px;
+  padding: 45px 0;
+  border-top: 1px solid #fff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    line-height: 2.1rem;
+    color: #fff;
+  }
+}
+
+.webdev {
+  display: flex;
+  align-items: center;
+  &:hover &__text {
+    color: $primary;
+  }
+  &__text {
+    display: block;
+    line-height: 1.6rem;
+    color: #fff;
+    margin-right: 10px;
+    transition: 0.3s;
+  }
+}
