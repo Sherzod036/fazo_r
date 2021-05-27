@@ -24,6 +24,10 @@ body {
   overflow-x: hidden;
 }
 
+body.body_fixed {
+  overflow-y: hidden;
+}
+
 body::-webkit-scrollbar {
   width: 6px;
 }

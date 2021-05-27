@@ -1,7 +1,19 @@
 $(function () {
+  const BODY = $('body')
+
+  const sliderBtns = [
+    `<span class="slider_btn inverse">
+      <img src="img/icons/slider_btn.svg" />
+    </span>`,
+    `<span class="slider_btn">
+      <img src="img/icons/slider_btn.svg" />
+    </span>`
+  ]
   function slider(selector) {
     $(selector).owlCarousel({
       items: 2,
+      nav: true,
+      navText: sliderBtns,
       dots: false,
       smartSpeed: 1000,
       mouseDrag: false,
@@ -24,5 +36,18 @@ $(function () {
     dots: false,
     mouseDrag: false,
     touchDrag: false
+  })
+
+  function popupOpen() {
+    $('.popup-video').addClass('popup-video_opened')
+  }
+
+  $('.popup-video__close').on('click', () => {
+    $('.popup-video').removeClass('popup-video_opened')
+  })
+
+  $('.hero__button_colored').on('click', (e) => {
+    e.preventDefault()
+    popupOpen()
   })
 })
