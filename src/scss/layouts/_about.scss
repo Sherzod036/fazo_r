@@ -1,23 +1,39 @@
 .about {
   position: relative;
   &_indent {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
   &__content {
+    margin-top: 100px;
     align-items: center;
+  }
+  &__abstract {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: -1;
   }
   &__inner {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    &::before {
+      content: '';
+      width: 530px;
+      height: 530px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: -1;
+      background: #f9f9f9;
+    }
   }
   &__image {
     display: block;
     &_right {
       position: absolute;
       right: 0;
-      bottom: -150px;
+      bottom: -250px;
     }
   }
   &__button {

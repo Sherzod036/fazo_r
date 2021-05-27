@@ -1,2 +1,26 @@
 @media (max-width: 1200px) {
+  .header {
+    position: fixed;
+    background: #fff;
+    padding: 5px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .header__nav {
+    margin-right: 20px;
+  }
+  .header__nav .list__item {
+    margin-right: 20px;
+  }
+  .header__nav .list__link {
+    font-size: 1.6rem;
+  }
+  .header__nav .list__link::before {
+    display: none;
+  }
+  .horizontal {
+    display: none;
+  }
+  .header__call {
+    margin-right: 20px;
+  }
 }

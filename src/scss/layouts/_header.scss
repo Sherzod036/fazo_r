@@ -15,7 +15,7 @@
     align-items: center;
   }
   &__logo {
-    display: block;
+    flex: 0 0 173px;
   }
   &__nav {
     margin-right: 70px;
@@ -99,4 +99,32 @@
   width: 1110px;
   height: 2px;
   background: #e1e1e1;
+}
+.hamburger {
+  display: none;
+}
+
+.hamburger-box {
+  width: 35px;
+}
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  width: 35px;
+  background-color: $primary;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before {
+  background-color: $primary;
+}
+.hamburger:hover,
+.hamburger:hover:after,
+.hamburger:hover:before {
+  opacity: 1;
+}
+.hamburger.is-active:hover,
+.hamburger.is-active:hover:after,
+.hamburger.is-active:hover:before {
+  opacity: 1;
 }

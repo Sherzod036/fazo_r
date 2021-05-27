@@ -1,6 +1,11 @@
 $(function () {
   const BODY = $('body')
 
+  $('.hamburger').on('click', function () {
+    $(this).toggleClass('is-active')
+    $('.header__inner').slideToggle().toggleClass('d-block')
+  })
+
   const sliderBtns = [
     `<span class="slider_btn inverse">
       <img src="img/icons/slider_btn.svg" />
@@ -40,10 +45,12 @@ $(function () {
 
   function popupOpen() {
     $('.popup-video').addClass('popup-video_opened')
+    BODY.addClass('body_fixed')
   }
 
   $('.popup-video__close').on('click', () => {
     $('.popup-video').removeClass('popup-video_opened')
+    BODY.removeClass('body_fixed')
   })
 
   $('.hero__button_colored').on('click', (e) => {
