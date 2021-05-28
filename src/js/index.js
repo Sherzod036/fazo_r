@@ -16,13 +16,21 @@ $(function () {
   ]
   function slider(selector) {
     $(selector).owlCarousel({
-      items: 2,
       nav: true,
       navText: sliderBtns,
       dots: false,
       smartSpeed: 1000,
       mouseDrag: false,
-      touchDrag: false
+      touchDrag: false,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 25
+        },
+        768: {
+          items: 2
+        }
+      }
     })
   }
 
@@ -56,5 +64,46 @@ $(function () {
   $('.hero__button_colored').on('click', (e) => {
     e.preventDefault()
     popupOpen()
+  })
+
+  // $('.single-page__sub-images').owlCarousel({
+  //   autoWidth: true,
+  //   autoHeight: true,
+  //   loop: true,
+  //   items: 4
+  // })
+
+  const subImage = $('.single-page__sub-image')
+
+  subImage.eq(0).addClass('single-page__sub-image_active')
+
+  subImage.on('click', function () {
+    subImage.removeClass('single-page__sub-image_active')
+    $(this).addClass('single-page__sub-image_active')
+  })
+
+  const mainImage = $('.single-page__main-image img')
+
+  $('.single-page__sub-image img').on('click', function () {
+    let current = $(this).attr('src')
+    mainImage
+      .fadeOut(400, () => {
+        mainImage.attr('src', current)
+        mainImage.attr('srcset', '')
+      })
+      .fadeIn()
+  })
+
+  // TABS
+  $('.tab__link').on('click', function (e) {
+    e.preventDefault()
+
+    const data = $(this).attr('data-tab')
+
+    $('.tab__link').removeClass('tab__link_active')
+    $(this).addClass('tab__link_active')
+
+    $('.tab__content').removeClass('tab__content_active')
+    $('#' + data).addClass('tab__content_active')
   })
 })

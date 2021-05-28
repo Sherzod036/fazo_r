@@ -23,4 +23,41 @@
   .header__call {
     margin-right: 20px;
   }
+  .hero {
+    padding-top: 77px;
+  }
+  .hero__title {
+    padding-top: 50px;
+  }
+  .hero__slider .owl-nav {
+    left: -530px;
+  }
+  .hero__slider,
+  .hero__slider-item {
+    width: 365px;
+  }
+  .hero__slider {
+    top: 77px;
+    right: 50px;
+  }
+  .hero__abstracts {
+    display: none;
+  }
+  .category,
+  .news__item {
+    width: 430px;
+    height: 320px;
+  }
+  .category__image {
+    width: 267px;
+  }
+  .about__image_right {
+    display: none;
+  }
+  .news__item-image {
+    height: 210px;
+  }
+  .about__abstract {
+    display: none;
+  }
 }

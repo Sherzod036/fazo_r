@@ -1,2 +1,36 @@
 @media (max-width: 576px) {
+  .title {
+    font-size: 3rem;
+  }
+  .about__content-title {
+    font-size: 3rem;
+  }
+  .single-page__left-block {
+    flex-direction: column;
+  }
+  .single-page__main-image {
+    order: 1;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .single-page__sub-images {
+    order: 2;
+    width: 100%;
+    display: flex;
+  }
+  .single-page__sub-image {
+    width: 95px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .tabs__links {
+    width: 452px;
+    overflow-x: auto;
+  }
+  .tab__link {
+    margin-right: 30px;
+  }
 }

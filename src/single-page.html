@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAZO-R | Textile</title>
+    <link rel="icon" href="img/icons/fav.png" type="image/png" />
+    <link rel="stylesheet" href="css/bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    @@include('chunks/_header-page.html')
+
+    <div class="single-page">
+      <span class="single-page__abstract">
+        <img src="img/single_page_abstract.png" alt="" />
+      </span>
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="#">Главная</a>
+          <span class="horizont">/</span>
+          <a href="#">Продукция</a>
+          <span class="horizont">/</span>
+          <div>М36</div>
+        </div>
+
+        <div class="single-page__top-block row">
+          <div class="col-lg-6">
+            <div class="single-page__left-block">
+              <div class="single-page__sub-images">
+                <span class="single-page__sub-image">
+                  <img src="img/product.jpg" alt="" />
+                </span>
+                <span class="single-page__sub-image">
+                  <img src="img/product.jpg" alt="" />
+                </span>
+                <span class="single-page__sub-image">
+                  <img src="img/product.jpg" alt="" />
+                </span>
+                <span class="single-page__sub-image">
+                  <img src="img/product.jpg" alt="" />
+                </span>
+              </div>
+              <div class="single-page__main-image">
+                <img src="img/product.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="single-page__title">Свитшот M364</span>
+            <span class="single-page__model">Модель M364</span>
+            <div class="single-page__chars">
+              <div class="char">
+                <span class="char__key">Тип</span>
+                <span class="char__val">Мужская одежда</span>
+              </div>
+              <div class="char">
+                <span class="char__key">Категория</span>
+                <span class="char__val">Мужская одежда</span>
+              </div>
+              <div class="char">
+                <span class="char__key">Артикул</span>
+                <span class="char__val">Мужская одежда</span>
+              </div>
+              <div class="char">
+                <span class="char__key">Бренд</span>
+                <span class="char__val">Мужская одежда</span>
+              </div>
+            </div>
+
+            <div class="single-page__sizes">
+              <span class="single-page__sizes-title">Размеры</span>
+              <div class="sizes">
+                <span class="size">xs</span>
+                <span class="size">s</span>
+                <span class="size">l</span>
+                <span class="size">xl</span>
+                <span class="size">xxl</span>
+              </div>
+            </div>
+
+            <div class="single-page__colors">
+              <span class="single-page__colors-title">Цвета</span>
+
+              <div class="colors">
+                <div class="color">
+                  <span class="color_circle" style="background: red"></span>
+                  <span class="color_tooltip">Красный</span>
+                </div>
+                <div class="color">
+                  <span class="color_circle" style="background: #f2c94c"></span>
+                  <span class="color_tooltip">Желтый</span>
+                </div>
+                <div class="color">
+                  <span class="color_circle" style="background: #9b51e0"></span>
+                  <span class="color_tooltip">Фиолетовый</span>
+                </div>
+              </div>
+            </div>
+
+            <a class="single-page__button" href="#">Оставить заявку</a>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div class="tabs__links">
+            <a class="tab__link tab__link_active" href="#" data-tab="desc">
+              Описание
+            </a>
+            <a class="tab__link" href="#" data-tab="chars">Характеристики</a>
+            <a class="tab__link" href="#" data-tab="buy">Где купить?</a>
+          </div>
+          <div class="tabs__content">
+            <div id="desc" class="tab__content tab__content_active">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore
+            </div>
+            <div id="chars" class="tab__content">32131331312313131</div>
+            <div id="buy" class="tab__content">dsadadadasdadadadada</div>
+          </div>
+        </div>
+
+        <div class="other-products">
+          <span class="other-products__title">Другие товары</span>
+          <div class="row">
+            <div class="col-lg-3">@@include('chunks/_product.html')</div>
+            <div class="col-lg-3">@@include('chunks/_product.html')</div>
+            <div class="col-lg-3">@@include('chunks/_product.html')</div>
+            <div class="col-lg-3">@@include('chunks/_product.html')</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('chunks/_footer.html')
+
+    <script src="js/jQ.js"></script>
+    <script src="js/bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

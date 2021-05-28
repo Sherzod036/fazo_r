@@ -21,6 +21,8 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   color: $secondary;
+  overflow-x: hidden;
+  background: #f9f9f9;
 }
 
 body.body_fixed {

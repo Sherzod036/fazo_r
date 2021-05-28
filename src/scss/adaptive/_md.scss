@@ -1,2 +1,23 @@
 @media (max-width: 768px) {
+  .hero__title {
+    max-width: 100%;
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+  }
+  .hero__slider {
+    margin: 0 auto;
+  }
+  .category,
+  .news__item {
+    width: 100%;
+  }
+  .title {
+    margin-bottom: 35px;
+  }
+  .copy__inner {
+    flex-direction: column;
+  }
+  .copy__text {
+    margin-bottom: 15px;
+  }
 }
