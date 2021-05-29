@@ -66,13 +66,6 @@ $(function () {
     popupOpen()
   })
 
-  // $('.single-page__sub-images').owlCarousel({
-  //   autoWidth: true,
-  //   autoHeight: true,
-  //   loop: true,
-  //   items: 4
-  // })
-
   const subImage = $('.single-page__sub-image')
 
   subImage.eq(0).addClass('single-page__sub-image_active')
@@ -95,15 +88,32 @@ $(function () {
   })
 
   // TABS
-  $('.tab__link').on('click', function (e) {
-    e.preventDefault()
+  function tabs(selector, selectorActive, content, contentActive, key) {
+    $(selector).on('click', function (e) {
+      e.preventDefault()
 
-    const data = $(this).attr('data-tab')
+      const data = $(this).attr(key)
 
-    $('.tab__link').removeClass('tab__link_active')
-    $(this).addClass('tab__link_active')
+      $(selector).removeClass(selectorActive)
+      $(this).addClass(selectorActive)
 
-    $('.tab__content').removeClass('tab__content_active')
-    $('#' + data).addClass('tab__content_active')
-  })
+      $(content).removeClass(contentActive)
+      $('#' + data).addClass(contentActive)
+    })
+  }
+
+  tabs(
+    '.tab__link',
+    'tab__link_active',
+    '.tab__content',
+    'tab__content_active',
+    'data-tab'
+  )
+  tabs(
+    '.faq__link',
+    'faq__link_active',
+    '.faq__content',
+    'faq__content_active',
+    'data-faq'
+  )
 })

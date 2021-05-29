@@ -210,14 +210,9 @@
   &__content {
     font-size: 1.4rem;
     line-height: 2.5rem;
-    opacity: 0;
-    height: 0;
-    visibility: hidden;
-    transition: 0.3s;
+    display: none;
     &_active {
-      opacity: 1;
-      height: auto;
-      visibility: visible;
+      display: block;
     }
   }
 }

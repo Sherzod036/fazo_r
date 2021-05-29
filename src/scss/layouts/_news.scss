@@ -1,5 +1,5 @@
 .news {
-  background: #ececec;
+  background: #f9f9f9;
   padding: 100px 0;
   &__item {
     display: block;
@@ -10,15 +10,20 @@
     &:hover &-desc {
       color: $primary;
     }
+    &:hover &-image img {
+      transform: scale(1.1);
+    }
     &-image {
       display: block;
       width: 100%;
       height: 256px;
+      overflow: hidden;
       & img {
         width: 100%;
         height: 100%;
         display: block;
         object-fit: cover;
+        transition: 0.3s;
       }
     }
     &-content {

@@ -1,0 +1,499 @@
+.page-title {
+  display: block;
+  font-family: 'TacticRound';
+  font-weight: 700;
+  font-size: 4.8rem;
+  margin-bottom: 50px;
+  &_red {
+    color: $primary;
+  }
+}
+
+.page-about {
+  position: relative;
+  padding-top: 87px;
+  &__indent {
+    margin-bottom: 100px;
+  }
+
+  &__benefit {
+    position: relative;
+    width: 100%;
+    height: 379px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &-container {
+      position: relative;
+      width: 100%;
+      height: 379px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-tint {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+    &-content {
+      position: relative;
+    }
+    &-title {
+      display: block;
+      font-family: 'TacticRound';
+      font-weight: 700;
+      font-size: 4.8rem;
+      color: #fff;
+      margin-bottom: 35px;
+    }
+    &-icon {
+      margin-right: 28px;
+      flex: 0 0 110px;
+    }
+    &-desc {
+      color: #fff;
+      line-height: 2.8rem;
+    }
+    &-inner {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 272px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__back {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    &-icon {
+      display: inline-block;
+      transform: rotate(90deg);
+      font-size: 0.8rem;
+      margin-right: 5px;
+    }
+  }
+  &__breadcrumbs {
+    display: flex;
+    color: #fff;
+    margin-bottom: 45px;
+  }
+  &__slash {
+    display: block;
+    margin: 0 10px;
+  }
+  &__title {
+    font-family: 'TacticRound';
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: #fff;
+  }
+}
+
+.anchors {
+  margin-bottom: 50px;
+  &__inner {
+    padding-top: 30px;
+    padding-bottom: 6px;
+    border-top: 3px solid $primary;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.anchor {
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  margin-right: 50px;
+  margin-bottom: 24px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    color: $primary;
+  }
+}
+
+.company-block {
+  &__items {
+    margin-bottom: 35px;
+  }
+  &__desc {
+    line-height: 2.8rem;
+  }
+  &__bot-desc {
+    line-height: 2.8rem;
+  }
+}
+
+.history {
+  position: relative;
+  background: #fff;
+  &__abstract {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &__items {
+    align-items: center;
+    line-height: 2.8rem;
+  }
+  &__image {
+    position: relative;
+    display: block;
+    border: 10px solid $primary;
+    border-radius: 10px;
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-block {
+      position: absolute;
+      left: 50%;
+      bottom: -30px;
+      transform: translateX(-50%);
+      height: 79px;
+      background: $primary;
+      color: #fff;
+      border-radius: 10px;
+      padding: 9px 22px;
+      font-family: 'TacticRound';
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      text-align: center;
+      & span {
+        display: block;
+        font-size: 3.8rem;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+.team {
+  &__items {
+    margin-bottom: 35px;
+  }
+  &__desc {
+    line-height: 2.8rem;
+  }
+  &__bot-desc {
+    line-height: 2.8rem;
+    margin-bottom: 40px;
+  }
+}
+
+.worker {
+  &__image {
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__name {
+    font-family: 'TacticRound';
+    font-weight: 700;
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  &__prof {
+    font-weight: 500;
+    font-size: 2rem;
+    color: #989898;
+    display: block;
+    margin-bottom: 12px;
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background: $primary;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-right: 12px;
+  }
+  &__link {
+    font-size: 1.4rem;
+    transition: 0.3s;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.agency {
+  position: relative;
+  width: 100%;
+  height: 545px;
+  background: #fff;
+  overflow: hidden;
+  &_phone {
+    margin-top: 5px;
+  }
+  &__bg {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &__container {
+    padding: 70px 0;
+  }
+  &__content {
+    position: relative;
+    display: flex;
+  }
+  &__flag {
+    margin-right: 25px;
+    margin-left: -100px;
+    flex: 0 0 369px;
+  }
+  &__desc {
+    display: block;
+    margin-bottom: 25px;
+    line-height: 2.8rem;
+  }
+  &__contact {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-polygon {
+      position: relative;
+      flex: 0 0 52px;
+      height: 64px;
+      margin-right: 11px;
+    }
+    &-icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    &-inner {
+      margin-top: 13px;
+    }
+    &-title {
+      display: block;
+      color: #989898;
+      margin-bottom: 10px;
+    }
+    &-link {
+      display: block;
+      transition: 0.3s;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.whatsapp {
+  display: block;
+  margin-left: 5px;
+}
+
+.cooperation {
+  &__desc {
+    display: block;
+    line-height: 2.8rem;
+    margin-bottom: 20px;
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    height: 308px;
+    box-shadow: 12px 12px 0px 0px $primary;
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__contacts {
+    &-title {
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  &__contact {
+    display: flex;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-key {
+      display: block;
+      flex: 0 0 80px;
+      font-weight: 700;
+      margin-right: 35px;
+    }
+    &-link {
+      display: block;
+      line-height: 2rem;
+      transition: 0.3s;
+      margin-bottom: 5px;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+.certificates {
+  &__desc {
+    display: block;
+    margin-bottom: 35px;
+    line-height: 2.8rem;
+  }
+}
+
+.production {
+  &__desc {
+    line-height: 2.8rem;
+  }
+  &__image {
+    width: 100%;
+    height: 380px;
+    box-shadow: 12px 12px 0px 0px $primary;
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.geog {
+  &__desc {
+    line-height: 2.8rem;
+    margin-bottom: 35px;
+  }
+  &__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    width: 15%;
+    text-align: center;
+    &-title {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 2rem;
+    }
+  }
+}
+
+.faq {
+  &__container {
+    position: relative;
+  }
+  &__image {
+    position: absolute;
+    right: -100px;
+    bottom: -180px;
+    display: block;
+  }
+  &__inner {
+    background: #fff;
+    border: 3px solid #dfdfdf;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    padding: 50px 20px;
+  }
+  &__link {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: 1px solid #b4b4b4;
+    font-weight: 700;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    &_active {
+      color: $primary;
+      box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.11);
+      border-radius: 3px;
+      border-bottom: 1px solid #fff;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__content {
+    line-height: 2.8rem;
+    display: none;
+    &_active {
+      display: block;
+    }
+  }
+}
+
+.partners {
+  &__desc {
+    display: block;
+    margin-bottom: 35px;
+    line-height: 2.8rem;
+  }
+  &__bot-desc {
+    line-height: 2.8rem;
+  }
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(20% - 20px);
+  background: #fff;
+  border: 1px solid #ededed;
+  box-shadow: 0px 34px 39px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
