@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAZO-R | Textile</title>
+    <link rel="icon" href="img/icons/fav.png" type="image/png" />
+    <link rel="stylesheet" href="css/bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    @@include('chunks/_header-page.html')
+
+    <div class="page-gallery">
+      <div class="banner" style="background-image: url('../img/banner.jpg')">
+        <div class="banner__container container">
+          <button class="banner__back">
+            <span class="banner__back-icon icon-lang"></span>
+            Назад
+          </button>
+          <div class="banner__breadcrumbs">
+            <a href="#">Главная</a>
+            <div class="banner__slash">/</div>
+            <span>Галерея</span>
+          </div>
+          <span class="banner__title">Галерея</span>
+        </div>
+      </div>
+
+      <div class="page-media">
+        <div class="page-media__slider owl-carousel container">
+          <div class="page-media__slider-item">
+            <div class="page-media__slider-pic">
+              <img src="img/gallery.jpg" alt="" />
+            </div>
+          </div>
+          <!-- /Item -->
+          <div class="page-media__slider-item">
+            <div class="page-media__slider-pic">
+              <img src="img/gallery.jpg" alt="" />
+            </div>
+          </div>
+          <!-- /Item -->
+          <div class="page-media__slider-item">
+            <div class="page-media__slider-pic">
+              <img src="img/gallery.jpg" alt="" />
+            </div>
+          </div>
+          <!-- /Item -->
+          <div class="page-media__slider-item">
+            <div class="page-media__slider-pic">
+              <img src="img/gallery.jpg" alt="" />
+            </div>
+          </div>
+          <!-- /Item -->
+        </div>
+      </div>
+    </div>
+
+    @@include('chunks/_footer.html')
+
+    <script src="js/jQ.js"></script>
+    <script src="js/bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

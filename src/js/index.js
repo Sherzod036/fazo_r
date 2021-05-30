@@ -14,6 +14,7 @@ $(function () {
       <img src="img/icons/slider_btn.svg" />
     </span>`
   ]
+
   function slider(selector) {
     $(selector).owlCarousel({
       nav: true,
@@ -87,6 +88,21 @@ $(function () {
       .fadeIn()
   })
 
+  const pageMediaArrows = [
+    '<span class="icon-media-arrow-left"></span>',
+    '<span class="icon-media-arrow-right"></span>'
+  ]
+
+  $('.page-media__slider').owlCarousel({
+    items: 1,
+    margin: 50,
+    smartSpeed: 1000,
+    mouseDrag: false,
+    touchDrag: false,
+    nav: true,
+    navText: pageMediaArrows
+  })
+
   // TABS
   function tabs(selector, selectorActive, content, contentActive, key) {
     $(selector).on('click', function (e) {
@@ -109,6 +125,7 @@ $(function () {
     'tab__content_active',
     'data-tab'
   )
+
   tabs(
     '.faq__link',
     'faq__link_active',

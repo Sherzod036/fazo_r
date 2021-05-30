@@ -71,6 +71,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-bottom: 3px solid $primary;
   &__container {
     height: 100%;
     display: flex;

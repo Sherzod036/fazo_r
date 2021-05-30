@@ -58,17 +58,21 @@
     color: #fff;
     margin-right: 10px;
   }
+
   &__link {
     display: block;
     color: #fff;
     transition: 0.3s;
+
     &:hover {
       color: $primary;
     }
+
     &_location {
       line-height: 2.5rem;
       margin-top: -3px;
     }
+
     &_phone {
       margin-bottom: 10px;
     }
